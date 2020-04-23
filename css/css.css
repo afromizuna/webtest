@@ -25,7 +25,50 @@
   width: 1000px;
   height: 200px;
   color: red;
-  background-color: gray;
+  background-color: #F2F2F2;
   text-align: center;
   line-height: 100px;
 }
+
+.loop_wrap {
+  margin: 0 auto;
+  width: 1000px;
+  height: 667px;
+}
+/* .loop_wrap {
+  display: flex;
+  width: 100vw;
+  height: 117px;
+  overflow: hidden;
+}
+
+.loop_wrap img {
+  width: auto;
+  height: 100%;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+.loop_wrap img:first-child {
+  animation: loop 10s -5s linear infinite;
+}
+
+.loop_wrap img:last-child {
+  animation: loop2 10s linear infinite;
+} */
