@@ -6,7 +6,7 @@ body {
   background-color: #F2F2F2;
 }
 
-.logo {
+.header {
   margin: 0 auto;
   width: 1000px;
   height: 580px;
@@ -16,63 +16,58 @@ body {
   /* filter: blur(1px); */
 }
 
-.progress {
+.logo {
+  display: inline-block;
   margin: 0 auto;
   color: white;
-  font-size: 60px;
+  font-size: 30px;
+  margin-left: 10px;
+  text-shadow: -1px -2px 3px #808080;
+}
+
+.about {
+  display: inline-block;
+  color: white;
+  margin-left: 400px;
+}
+
+.menu {
+  display: inline-block;
+  color: white;
+  margin-left: 50px;
+}
+
+.concept {
+  margin: 0 auto;
+  color: white;
+  font-size: 50px;
+  text-align: right;
+  line-height:500px;
+  text-shadow: -1px -2px 3px #808080;
+}
+
+.progress {
+  margin: 0 auto;
+  width: 1000px;
+  height: 400px;
+  color: #6f8e20;
+  background-color: white;
   text-align: center;
-  line-height: 200px;
+  line-height: 80px;
 }
 
 .progress1 {
   margin: 0 auto;
   width: 1000px;
-  height: 200px;
-  color: red;
-  background-color: white;
+  height: 400px;
+  color: #6f8e20;
+  background-color: #E6FFE6;
   text-align: center;
-  line-height: 100px;
+  line-height: 80px;
 }
 
 .loop_wrap {
   margin: 0 auto;
   width: 1000px;
-  height: 667px;
+  height: 200px;
 }
-/* .loop_wrap {
-  display: flex;
-  width: 100vw;
-  height: 117px;
-  overflow: hidden;
-}
-
-.loop_wrap img {
-  width: auto;
-  height: 100%;
-}
-
-@keyframes loop {
-  0% {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes loop2 {
-  0% {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-200%);
-  }
-}
-
-.loop_wrap img:first-child {
-  animation: loop 10s -5s linear infinite;
-}
-
-.loop_wrap img:last-child {
-  animation: loop2 10s linear infinite;
-} */
