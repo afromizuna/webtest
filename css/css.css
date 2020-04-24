@@ -44,6 +44,7 @@ body {
   text-align: right;
   line-height:500px;
   text-shadow: -1px -2px 3px #808080;
+  font-family: fantasy;
 }
 
 .progress {
