@@ -2,10 +2,14 @@
   margin:0; padding:0;
 }
 
+body {
+  background-color: #F2F2F2;
+}
+
 .logo {
   margin: 0 auto;
   width: 1000px;
-  height: 667px;
+  height: 580px;
   background-repeat: no-repeat;
   background: center;
   background-image: url(../logo_back.jpg);
@@ -25,7 +29,7 @@
   width: 1000px;
   height: 200px;
   color: red;
-  background-color: #F2F2F2;
+  background-color: white;
   text-align: center;
   line-height: 100px;
 }
