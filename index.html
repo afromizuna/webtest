@@ -4,6 +4,27 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/css.css">
     <title>k's cafe test_page</title>
+    <!-- jQuery.jsの読み込み -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <!-- スムーズスクロール部分の記述 -->
+    <script>
+      $(function(){
+         // #で始まるアンカーをクリックした場合に処理
+         $('a[href^=#]').click(function() {
+            // スクロールの速度
+            var speed = 400; // ミリ秒
+            // アンカーの値取得
+            var href= $(this).attr("href");
+            // 移動先を取得
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            // 移動先を数値で取得
+            var position = target.offset().top;
+            // スムーススクロール
+            $('body,html').animate({scrollTop:position}, speed, 'swing');
+            return false;
+         });
+      });
+    </script>
   </head>
   <body>
 
@@ -12,29 +33,32 @@
         k's cafe
       </div>
       <div class="about">
-        About
+        <a href="#sec1">About</a>
       </div>
       <div class="menu">
-        Menu
+        <a href="#sec2">Menu</a>
       </div>
       <div class="menu">
-        map & infomation
+        <a href="#sec3">map & infomation</a>
       </div>
       <div class="menu">
-        Schedule
+        <a href="#sec4">link</a>
       </div>
       <div class="concept">
         music & coffee
       </div>
     </div>
 
+    <div id="sec1">
     <div class="progress">
       <h1>About</h1>
-      <p>美味しいコーヒーと音楽を、ゆったりとした店内で楽しめます<br>
+      <p>美味しいコーヒーと音楽を、ゆったりとした雰囲気で楽しめます〜<br>
          テラス席はペット同伴もOK<br>
-         6月オープン予定<br>
-         ☆開店準備中☆<br>
+         ギャラリーも併設。作品募集中！<br>
+         <h3>6月20日（土）　オープン！</h3>
+         <span class="blinking">☆開店準備中☆</span>
        </p>
+    </div>
     </div>
 
     <div class="loop_wrap">
@@ -45,27 +69,96 @@
         <img src="images/image_05.jpg" alt="">
         <img src="images/image_06.jpg" alt="">
         <img src="images/image_07.jpg" alt="">
+        <img src="images/image_08.jpg" alt="">
+        <img src="images/image_09.jpg" alt="">
+        <img src="images/image_10.jpg" alt="">
+        <img src="images/image_11.jpg" alt="">
+        <img src="images/image_12.jpg" alt="">
+        <img src="images/image_13.jpg" alt="">
+        <img src="images/image_14.jpg" alt="">
+        <img src="images/image_15.jpg" alt="">
     </div>
 
-    <div class="progress">
+    <div id="sec2">
+    <div class="progress_menu">
       <h1>Menu</h1>
-      <p>メニューを写真つきで並べます。<br>
-         コーヒー<br>
-         ケーキ<br>
-         ギャラリー<br>
-       </p>
+      <div class="table">
+        <table>
+          <tr>
+            <td height="150"><img src="images/coffe.jpg" alt=""></td>
+            <td width="300">コーヒー</td>
+            <td width="100">・・・300円</td>
+          </tr>
+          <tr>
+            <td height="150"><img src="images/ice_coffe.jpg" alt=""></td>
+            <td>アイスコーヒー</td>
+            <td>・・・350円</td>
+          </tr>
+          <tr>
+            <td height="150"><img src="images/cake.jpg" alt=""></td>
+            <td>シフォンケーキ</td>
+            <td>・・・300円</td>
+          </tr>
+          <tr>
+            <td height="150"><img src="images/food_plate.jpg" alt=""></td>
+            <td>日替わりランチ（限定１０食）</td>
+            <td>・・・500円</td>
+          </tr>
+        </table>
+      </div>
+    </div>
     </div>
 
+    <div id="sec3">
     <div class="progress1">
       <h1>map & infomation</h1>
-      <p>地図と連絡先、開店時間の情報を載せます。<br>
-      </p>
+        <table>
+          <tr>
+            <td width="200">営業時間</td>
+            <td align="left">１０：００〜１６：００</td>
+          </tr>
+          <tr>
+            <td>定休日</td>
+            <td align="left">？？？</td>
+          </tr>
+          <tr>
+            <td>ADRESS</td>
+            <td align="left">〒289-1801 千葉県山武市蓮沼イの361−1</td>
+          </tr>
+          <tr>
+            <td>TEL</td>
+            <td align="left">0475−86−2317</td>
+          </tr>
+        </table>
+    </div>
     </div>
 
-    <div class="progress">
-      <h1>Schedule</h1>
-      <p>開店日の情報を載せます。<br>
-      </p>
+    <div id="sec4">
+    <div class="progress2">
+      <h1>link</h1>
+       <table width="1000px">
+         <tr>
+           <td align="right"><img src="images/salon.png" alt=""></td>
+           <td width="200">さろんとーえむ</td>
+           <td>・・・フリースペース</td>
+         </tr>
+         <tr>
+           <td align="right"><img src="images/gal.jpg" alt=""></td>
+           <td width="200">ギャラリー作家さん</td>
+           <td>・・・作家さんのページへG o！</td>
+         </tr>
+         <tr>
+           <td align="right"><img src="images/gal.jpg" alt=""></td>
+           <td width="200">ギャラリー作家さん</td>
+           <td>・・・作家さんのページへG o！</td>
+         </tr>
+         <tr>
+           <td align="right"><img src="images/gal.jpg" alt=""></td>
+           <td width="200">ギャラリー作家さん</td>
+           <td>・・・作家さんのページへG o！</td>
+         </tr>
+       </table>
+    </div>
     </div>
 
   </body>

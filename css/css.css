@@ -54,15 +54,39 @@ body {
   color: #6f8e20;
   background-color: white;
   text-align: center;
-  line-height: 80px;
+  line-height: 65px;
+}
+
+.progress_menu {
+  margin: 0 auto;
+  width: 1000px;
+  height: 700px;
+  color: #6f8e20;
+  background-color: white;
+  text-align: center;
+  line-height: 60px;
+}
+
+.table {
+  margin-left: 300px;
 }
 
 .progress1 {
   margin: 0 auto;
   width: 1000px;
-  height: 400px;
+  height: 500px;
   color: #6f8e20;
   background-color: #F2F2F2;
+  text-align: center;
+  line-height: 80px;
+}
+
+.progress2 {
+  margin: 0 auto;
+  width: 1000px;
+  height:1200px;
+  color: #6f8e20;
+  background-color: white;
   text-align: center;
   line-height: 80px;
 }
@@ -70,9 +94,30 @@ body {
 .loop_wrap {
   margin: 0 auto;
   width: 1000px;
-  height: 200px;
+  height: 400px;
+  text-align: center;
 }
 
 h1 {
   font-family: fantasy;
+}
+
+h3 {
+  color: red;
+}
+
+.header {
+  font-family: fantasy;
+}
+
+.blinking{
+  color: red;
+  animation-name: blink; /* アニメーションの名前を設定 */
+  animation-duration: 2s; /* アニメーションの秒数を設定 */
+  animation-iteration-count: infinite; /* 繰り返しを設定（１回だけなら不要） */
+}
+
+@keyframes blink{ /*上記で設定したアニメーションの動作を指定 */
+    0% {opacity:1;} /* 1.2s中の動作開始時間を%で指示 */
+    50% {opacity:0;} /* 同上 */
 }
