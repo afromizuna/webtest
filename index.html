@@ -30,7 +30,7 @@
 
     <div class="header">
       <div class="logo">
-        k's cafe
+        K's cafe
       </div>
       <div class="about">
         <a href="#sec1">About</a>
@@ -55,7 +55,7 @@
       <p>美味しいコーヒーと音楽を、ゆったりとした雰囲気で楽しめます〜<br>
          テラス席はペット同伴もOK<br>
          ギャラリーも併設。作品募集中！<br>
-         <h3>6月20日（土）　オープン！</h3>
+         <h3>6月23日（火）　オープン！</h3>
          <span class="blinking">☆開店準備中☆</span>
        </p>
     </div>
@@ -86,23 +86,23 @@
         <table>
           <tr>
             <td height="150"><img src="images/coffe.jpg" alt=""></td>
-            <td width="300">コーヒー</td>
-            <td width="100">・・・300円</td>
+            <td width="400">ハンドドリップコーヒー</td>
+            <td width="300" align="left">・・・350円</td>
           </tr>
           <tr>
             <td height="150"><img src="images/ice_coffe.jpg" alt=""></td>
-            <td>アイスコーヒー</td>
-            <td>・・・350円</td>
+            <td>アイスコーヒー<br>ソフトドリンク</td>
+            <td align="left">・・・350円<br>・・・300円（紅茶・烏龍茶）</td>
           </tr>
           <tr>
             <td height="150"><img src="images/cake.jpg" alt=""></td>
-            <td>シフォンケーキ</td>
-            <td>・・・300円</td>
+            <td>手作りシフォンケーキ<br>セット</td>
+            <td align="left">・・・350円<br>・・・600円</td>
           </tr>
           <tr>
             <td height="150"><img src="images/food_plate.jpg" alt=""></td>
-            <td>日替わりランチ（限定１０食）</td>
-            <td>・・・500円</td>
+            <td>日替わりランチ（限定１０食）<br>ドリンク付き</td>
+            <td align="left">・・・750円</td>
           </tr>
         </table>
       </div>
@@ -112,14 +112,43 @@
     <div id="sec3">
     <div class="progress1">
       <h1>map & infomation</h1>
+      <div class="map">
+        <div id="target"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=AIzaSyAHUv2mlrqn6MPyDRvvNphb_Dcr_-kOihI&callback=initMap" async defer>
+        </script>
+        <script>
+          function initMap() {
+              'use strict';
+
+              var target = document.getElementById('target');
+              var map;
+              var tokyo = {tat: 35.681167, lng: 139.767052};
+
+              map  = new google.maps.Map(target,{
+                center: tokyo;
+                zoom 10;
+              });
+          }
+        </script>
+      </div>
+
+      <div class="table_adress">
         <table>
           <tr>
             <td width="200">営業時間</td>
-            <td align="left">１０：００〜１６：００</td>
+            <td align="left">１１：００〜１６：００</td>
           </tr>
           <tr>
-            <td>定休日</td>
-            <td align="left">？？？</td>
+            <td width="200"></td>
+            <td align="left">１１：３０〜１４：００（ランチ）</td>
+          </tr>
+          <tr>
+            <td>OPEN</td>
+            <td align="left">火・水・金・土</td>
+          </tr>
+          <tr>
+            <td>CLOSE</td>
+            <td align="left">日・月・木</td>
           </tr>
           <tr>
             <td>ADRESS</td>
@@ -130,6 +159,7 @@
             <td align="left">0475−86−2317</td>
           </tr>
         </table>
+      </div>
     </div>
     </div>
 

@@ -12,7 +12,7 @@ body {
   height: 580px;
   background-repeat: no-repeat;
   background: center;
-  background-image: url(../images/logo_back.jpg);
+  background-image: url(../images/head_back.jpg);
   /* filter: blur(1px); */
 }
 
@@ -20,7 +20,7 @@ body {
   display: inline-block;
   margin: 0 auto;
   color: white;
-  font-size: 30px;
+  font-size: 60px;
   margin-left: 10px;
   margin-top: 5px;
   text-shadow: -1px -2px 3px #808080;
@@ -29,22 +29,24 @@ body {
 .about {
   display: inline-block;
   color: white;
-  margin-left: 300px;
+  margin-left: 350px;
+  font-size: 20px;
 }
 
 .menu {
   display: inline-block;
   color: white;
-  margin-left: 50px;
+  margin-left: 20px;
+  font-size: 20px;
 }
 
 .concept {
   margin: 0 auto;
   color: white;
   font-size: 50px;
-  text-align: right;
-  line-height:550px;
-  margin-right: 20px;
+  text-align: left;
+  line-height:900px;
+  margin-left: 50px;
   text-shadow: -1px -2px 3px #808080;
   font-family: fantasy;
 }
@@ -70,13 +72,17 @@ body {
 }
 
 .table {
+  margin-left: 200px;
+}
+
+.table_adress {
   margin-left: 300px;
 }
 
 .progress1 {
   margin: 0 auto;
   width: 1000px;
-  height: 500px;
+  height: 600px;
   color: #6f8e20;
   background-color: #F2F2F2;
   text-align: center;
@@ -93,6 +99,17 @@ body {
   line-height: 80px;
 }
 
+.map {
+  margin: 0 auto;
+  width: 500px;
+  height: 300px;
+  background-color: white;
+}
+#target {
+    width: 500px;
+    height: 300px;
+}
+
 .loop_wrap {
   margin: 0 auto;
   width: 1000px;
@@ -106,6 +123,10 @@ h1 {
 
 h3 {
   color: red;
+}
+
+td {
+  line-height: 2;
 }
 
 .header {
