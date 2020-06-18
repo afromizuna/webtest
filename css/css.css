@@ -82,7 +82,7 @@ body {
 .progress1 {
   margin: 0 auto;
   width: 1000px;
-  height: 600px;
+  height: 650px;
   color: #6f8e20;
   background-color: #F2F2F2;
   text-align: center;
@@ -99,10 +99,20 @@ body {
   line-height: 80px;
 }
 
+.progress3 {
+  margin: 0 auto;
+  width: 1000px;
+  height:1200px;
+  color: #6f8e20;
+  background-color: #F2F2F2;
+  text-align: center;
+  line-height: 80px;
+}
+
 .map {
   margin: 0 auto;
   width: 500px;
-  height: 300px;
+  height: 364px;
   background-color: white;
 }
 #target {
