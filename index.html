@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/css.css">
-    <title>k's cafe test_page</title>
+    <title>k's cafe </title>
     <!-- jQuery.jsの読み込み -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
     <!-- スムーズスクロール部分の記述 -->
@@ -25,6 +25,20 @@
          });
       });
     </script>
+
+    <!-- 写真横にスライド -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+      <script type="text/javascript">
+          $(document).ready(function(){
+              $('.slider').bxSlider({
+                  auto: true,
+                  pause: 7000,
+            });
+        });
+      </script>
   </head>
   <body>
 
@@ -50,35 +64,25 @@
     </div>
 
     <div id="sec1">
-    <div class="progress">
-      <h1>About</h1>
-      <p>美味しいコーヒーと手作りケーキを、ゆったりとした雰囲気で楽しめます〜<br>
-         テラス席はペット同伴もOK<br>
-         ギャラリーも併設。作品募集中！<br>
-         <h3>6月23日（火）　オープン！</h3>
-         <span class="blinking">☆開店準備中☆</span>
-       </p>
+      <div class="progress">
+        <h1>About</h1>
+        <p>いつでも、だれでも、気軽に立ち寄れる　あなたの場所<br>
+           ゆったり時間の蓮沼で過ごして欲しいのです。<br>
+           午前の風は山の風♪　午後の風は海の風♪<br>
+           自然の風を確かめに来てください。<br>
+           <span class="blinking">☆New Open!☆</span>
+         </p>
+      </div>
     </div>
+    <div class="slide">
+      <div class="slider">
+        <img src="images/slide01.jpg" width="1000" height="500" alt="">
+        <img src="images/slide02.jpg" width="1000" height="500" alt="">
+        <img src="images/slide03.jpg" width="1000" height="500" alt="">
+        <img src="images/slide01.jpg" width="1000" height="500" alt="">
+      </div>
     </div>
 
-    <div class="loop_wrap">
-        <img src="images/image_01.jpg" alt="">
-        <img src="images/image_02.jpg" alt="">
-        <img src="images/image_03.jpg" alt="">
-        <img src="images/image_04.jpg" alt="">
-        <img src="images/image_05.jpg" alt="">
-        <img src="images/image_06.jpg" alt="">
-        <img src="images/image_07.jpg" alt="">
-        <img src="images/image_08.jpg" alt="">
-        <img src="images/image_09.jpg" alt="">
-        <img src="images/image_10.jpg" alt="">
-        <img src="images/image_11.jpg" alt="">
-        <img src="images/image_12.jpg" alt="">
-        <img src="images/image_13.jpg" alt="">
-        <img src="images/image_14.jpg" alt="">
-        <img src="images/image_15.jpg" alt="">
-        <img src="images/image_16.jpg" alt="">
-    </div>
 
     <div id="sec2">
     <div class="progress_menu">
@@ -175,6 +179,11 @@
       <h1>link</h1>
        <table width="1000px">
          <tr>
+           <td align="right"><a href="road_to_open.html" target="_blank"><img src="images/ks.jpg" alt=""></a></td>
+           <td width="200">K'sCafeアルバム</td>
+           <td>・・・オープン前の写真です。</td>
+         </tr>
+         <tr>
            <td align="right"><a href="https://salontoemu.web.fc2.com/" target="_blank"><img src="images/salon.png" alt=""></a></td>
            <td width="200">さろんとーえむ</td>
            <td>・・・フリースペース</td>
@@ -192,6 +201,10 @@
        </table>
     </div>
     </div>
-
+<div style="text-align:center;">
+  <!-- FC2カウンター ここから -->
+<script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=36919677&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=36919677&main=1" /></noscript>
+<!-- FC2カウンター ここまで -->
+  </div>
   </body>
 </html>
