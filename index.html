@@ -4,27 +4,6 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/css.css">
     <title>k's cafe </title>
-    <!-- jQuery.jsの読み込み -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-    <!-- スムーズスクロール部分の記述 -->
-    <script>
-      $(function(){
-         // #で始まるアンカーをクリックした場合に処理
-         $('a[href^=#]').click(function() {
-            // スクロールの速度
-            var speed = 400; // ミリ秒
-            // アンカーの値取得
-            var href= $(this).attr("href");
-            // 移動先を取得
-            var target = $(href == "#" || href == "" ? 'html' : href);
-            // 移動先を数値で取得
-            var position = target.offset().top;
-            // スムーススクロール
-            $('body,html').animate({scrollTop:position}, speed, 'swing');
-            return false;
-         });
-      });
-    </script>
 
     <!-- 写真横にスライド -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -70,6 +49,7 @@
            ゆったり時間の蓮沼で過ごして欲しいのです。<br>
            午前の風は山の風♪　午後の風は海の風♪<br>
            自然の風を確かめに来てください。<br>
+           テラス席は愛犬とご一緒出来ます。<a href="album.html">→アルバム</a><br>
            <a href="https://www.instagram.com/handsilk" target="_blank">今日のランチ！</a><br>
            <span class="blinking">☆New Open!☆</span>
          </p>

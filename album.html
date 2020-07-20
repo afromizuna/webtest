@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/css.css">
+    <title>album</title>
+    <!-- 写真横にスライド -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+      <script type="text/javascript">
+          $(document).ready(function(){
+              $('.slider').bxSlider({
+                  auto: true,
+                  pause: 7000,
+            });
+        });
+      </script>
+  </head>
+  <body>
+    <div class="album">
+      <h1>Album</h1>
+      <div class="slider">
+        <img src="images/dog_01.jpg" width="300" height="452" alt="">
+
+      </div>
+      <a href="index.html" >home</a>
+    </div>
+  </body>
+</html>
