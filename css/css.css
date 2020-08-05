@@ -68,7 +68,7 @@ body {
 .progress {
   margin: 0 auto;
   width: 1000px;
-  height: 500px;
+  height: 620px;
   color: #6f8e20;
   background-color: white;
   text-align: center;
@@ -180,7 +180,7 @@ td {
 .blinking{
   color: red;
   animation-name: blink; /* アニメーションの名前を設定 */
-  animation-duration: 2s; /* アニメーションの秒数を設定 */
+  animation-duration: 5s; /* アニメーションの秒数を設定 */
   animation-iteration-count: infinite; /* 繰り返しを設定（１回だけなら不要） */
 }
 
