@@ -68,7 +68,7 @@ body {
 .progress {
   margin: 0 auto;
   width: 1000px;
-  height: 550px;
+  height: 600px;
   color: #6f8e20;
   background-color: white;
   text-align: center;
@@ -184,8 +184,12 @@ td {
 .blinking{
   color: red;
   animation-name: blink; /* アニメーションの名前を設定 */
-  animation-duration: 5s; /* アニメーションの秒数を設定 */
+  animation-duration: 3s; /* アニメーションの秒数を設定 */
   animation-iteration-count: infinite; /* 繰り返しを設定（１回だけなら不要） */
+}
+
+.blinking1{
+  color: red;
 }
 
 @keyframes blink{ /*上記で設定したアニメーションの動作を指定 */
